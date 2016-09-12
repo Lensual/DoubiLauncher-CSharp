@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using Microsoft.VisualBasic.FileIO;
 using System.Net;
+using Microsoft.VisualBasic.Devices;
 
 namespace DoubiLauncher_CSharp
 {
@@ -129,9 +130,8 @@ namespace DoubiLauncher_CSharp
                             break;
                         case "download":
                             #region download(地址,存放路径);
-                            WebClient wc = new WebClient();
-                            wc.DownloadFile(parameter[0], parameter[1]);
-                            //My.Computer.Network.DownloadFile(parameter(0), parameter(1), "", "", True, 100, True, FileIO.UICancelOption.ThrowException)
+                            Microsoft.VisualBasic.Devices.Network n = new Microsoft.VisualBasic.Devices.Network();
+                            n.DownloadFile(parameter[0], parameter[1], "", "", true, 100, true, UICancelOption.ThrowException);
                             #endregion
                             break;
                         case "start":

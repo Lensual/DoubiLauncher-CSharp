@@ -41,7 +41,7 @@
                 </EventTrigger>
             </Label.Triggers>
         </Label>
-        <Label Content="启动器" SnapsToDevicePixels="False" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft YaHei" Foreground="Black" Margin="208.56,10,0,0"/>
+        <Label Content="启动器  Alpha" SnapsToDevicePixels="False" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft YaHei" Foreground="Black" Margin="208.56,10,0,0"/>
 
         <Button x:Name="btn_Launch" Content="Launch" Margin="506,298,10,10" BorderThickness="2" Style="{DynamicResource DefaultButton}" FontSize="32" Click="btn_Launch_Click" IsTabStop="False" />
 
