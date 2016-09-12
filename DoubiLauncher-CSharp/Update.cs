@@ -255,7 +255,7 @@ namespace DoubiLauncher_CSharp
         {
             try
             {
-                MainWindow.notice = Network.cURL(url);
+                MainWindow.notice = Network.cURL(url + "?Command=GetNotice");
                 ((System.Windows.Controls.TextBlock)Application.Current.Properties["txt_Notice"]).Dispatcher.BeginInvoke(new Action(() =>
                 {
                     ((System.Windows.Controls.TextBlock)Application.Current.Properties["txt_Notice"]).Text = MainWindow.notice;
