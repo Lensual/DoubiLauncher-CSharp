@@ -24,10 +24,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="updateUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://update.dreamerstudio.net/update/DoubiLauncher/index.php</Value>
+      <Value Profile="(Default)">http://update.dreamerstudio.net:50003/update/DoubiLauncher/index.php</Value>
     </Setting>
     <Setting Name="noticeUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://update.dreamerstudio.net/update/DoubiLauncher/notice.txt</Value>
+      <Value Profile="(Default)">http://update.dreamerstudio.net:50003/update/DoubiLauncher/notice.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

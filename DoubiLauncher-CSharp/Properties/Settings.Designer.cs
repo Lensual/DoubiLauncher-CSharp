@@ -109,7 +109,7 @@ namespace DoubiLauncher_CSharp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://update.dreamerstudio.net/update/DoubiLauncher/index.php")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://update.dreamerstudio.net:50003/update/DoubiLauncher/index.php")]
         public string updateUrl {
             get {
                 return ((string)(this["updateUrl"]));
@@ -121,7 +121,7 @@ namespace DoubiLauncher_CSharp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://update.dreamerstudio.net/update/DoubiLauncher/notice.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://update.dreamerstudio.net:50003/update/DoubiLauncher/notice.txt")]
         public string noticeUrl {
             get {
                 return ((string)(this["noticeUrl"]));
