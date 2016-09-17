@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubiLauncher-CSharp", "DoubiLauncher-CSharp\DoubiLauncher-CSharp.csproj", "{6E78B548-8562-42DE-B596-618BC8D35E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftServerPing-CSharp", "MinecraftServerPing-CSharp\MinecraftServerPing-CSharp.csproj", "{23F6141B-62CA-43B0-AC4A-12FDA90C753B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{6E78B548-8562-42DE-B596-618BC8D35E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E78B548-8562-42DE-B596-618BC8D35E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E78B548-8562-42DE-B596-618BC8D35E81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23F6141B-62CA-43B0-AC4A-12FDA90C753B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23F6141B-62CA-43B0-AC4A-12FDA90C753B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23F6141B-62CA-43B0-AC4A-12FDA90C753B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23F6141B-62CA-43B0-AC4A-12FDA90C753B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

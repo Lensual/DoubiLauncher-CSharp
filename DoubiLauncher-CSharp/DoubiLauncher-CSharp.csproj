@@ -84,6 +84,10 @@
     <Compile Include="JSONSerizer.cs" />
     <Compile Include="LaunchHelper.cs" />
     <Compile Include="MCJsonStruct.cs" />
+    <Compile Include="MinecraftServerPing-CSharp\MinecraftPing.cs" />
+    <Compile Include="MinecraftServerPing-CSharp\MinecraftPingOptions.cs" />
+    <Compile Include="MinecraftServerPing-CSharp\MinecraftPingReply.cs" />
+    <Compile Include="MinecraftServerPing-CSharp\MinecraftPingUtil.cs" />
     <Compile Include="Network.cs" />
     <Compile Include="SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
@@ -157,15 +161,13 @@
     <None Include="Resources\7za.exe" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MinecraftServerPing-CSharp\MinecraftServerPing-CSharp.csproj">
-      <Project>{23f6141b-62ca-43b0-ac4a-12fda90c753b}</Project>
-      <Name>MinecraftServerPing-CSharp</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="BigGod_ICO_blue.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
