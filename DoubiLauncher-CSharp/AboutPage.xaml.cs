@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -23,10 +24,24 @@ namespace DoubiLauncher_CSharp
         {
             InitializeComponent();
         }
-
-        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        private void label1_MouseDown(Object sender, MouseButtonEventArgs e)
         {
-            (new Action(() => { Properties.Settings.Default.Save(); })).BeginInvoke(null, null);
+            Process.Start("http://lensual.dreamerstudio.net/blog");
         }
+        private void label2_MouseDown(Object sender, MouseButtonEventArgs e)
+        {
+            Process.Start("http://www.dreamerstudio.net/doubilauncher");
+        }
+        private void label3_MouseDown(Object sender, MouseButtonEventArgs e)
+        {
+            Process.Start("http://github.com/Lensual/DoubiLauncher-CSharp");
+        }
+
+        private void label6_MouseDown(Object sender, MouseButtonEventArgs e)
+        {
+            Clipboard.SetData(DataFormats.Text, "561312630");
+            MessageBox.Show("复制成功喵");
+        }
+
     }
 }

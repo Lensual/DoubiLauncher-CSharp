@@ -4,12 +4,55 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DoubiLauncher_CSharp"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="AboutPage" Unloaded="Page_Unloaded">
+      mc:Ignorable="d" d:DesignHeight="391" d:DesignWidth="707"
+      Title="AboutPage" ShowsNavigationUI="False">
 
     <Grid>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="43.038,45.57,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <Ellipse HorizontalAlignment="Left" Height="73.861" VerticalAlignment="Top" Width="73.861" Margin="49.285,46.829,0,0">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="head.jpg"/>
+            </Ellipse.Fill>
+            <Ellipse.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="0" Opacity="1" />
+            </Ellipse.Effect>
+        </Ellipse>
+        <!--<Border BorderBrush="Black" VerticalAlignment="Top" BorderThickness="1" Height="{Binding Height,ElementName=head}"  Width="{Binding Width, ElementName=head}" Margin="31.216,46.829,575.784,0">
+            <Image x:Name="head" Source="head.jpg" HorizontalAlignment="Left" Height="73.861" VerticalAlignment="Top" Width="73.861"  />
+        </Border>-->
+        <Label x:Name="label" Content="Lensual" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123.146,57.95,0,0" FontSize="32" Cursor="Hand" MouseDown="label1_MouseDown" >
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation From="Black" To="#FF039AE3" Duration="0:0:0.5" Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation From="#FF039AE3" To="Black" Duration="0:0:0.5" Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation From="#00039AE3" To="#FF039AE3"  Duration="0:0:0.2" Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+
+        <Label x:Name="label1" Content="http://lensual.dreamerstudio.net/blog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123.146,95.45,0,0" MouseDown="label1_MouseDown" Cursor="Hand"/>
+        <Label x:Name="label2" Content="项目主页 http://www.dreamerstudio.net/doubilauncher" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169.905,186.688,0,0" MouseDown="label2_MouseDown" Cursor="Hand"/>
+        <Label x:Name="label3" Content="Github https://github.com/Lensual/DoubiLauncher-CSharp" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169.905,216.928,0,0" MouseDown="label3_MouseDown" Cursor="Hand"/>
+        <Label x:Name="label4" Content="求会WPF的帮忙设计界面（╯ＱＡＱ）╯╧╧" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25.716" Width="234.807" Margin="10,324.964,0,0"/>
+        <Label x:Name="label5" Content="求会VB.NET的合作撸码（╯ＱＡＱ）╯╧╧" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29.858" Width="234.807" Margin="10,350.68,0,0"/>
+        <Label x:Name="label6" Content="Doubi启动器官方服务器 群号 561312630 (点我复制)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306.966,335.964,0,0" FontSize="16" MouseDown="label6_MouseDown" Cursor="Hand"/>
 
     </Grid>
+
 </Page>

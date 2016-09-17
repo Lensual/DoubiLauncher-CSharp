@@ -163,6 +163,9 @@
   <ItemGroup>
     <Resource Include="BigGod_ICO_blue.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="head.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
